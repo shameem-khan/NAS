@@ -22,13 +22,13 @@ const port = 3000;
 const userdata = [];  
 
 const db = new pg.Client({
-    user: "sk",
-    host: "dpg-ctpn2j23esus73djc000-a.singapore-postgres.render.com",
-    database: "nas_test",
-    password: "ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2",
+    //user: "sk",
+    host: "postgresql://sk:ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2@dpg-ctpn2j23esus73djc000-a/nas_test",
+    //database: "nas_test",
+    //password: "ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2",
     port: 5432,
     ssl: true,
-    connectionString: "postgresql://sk:ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2@dpg-ctpn2j23esus73djc000-a.singapore-postgres.render.com/nas_test"
+    //connectionString: "postgresql://sk:ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2@dpg-ctpn2j23esus73djc000-a.singapore-postgres.render.com/nas_test"
 });
 db.connect();
 
