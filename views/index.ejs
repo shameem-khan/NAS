@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Heading</h1>
+    <div class="c-buttons" id="i-buttons">
+        <button onclick="getdiv(1)">New LPO</button>
+        <button onclick="getdiv(2)">Delivery</button>
+    </div>
+
+    <div class="c-div" id="i-div-LPO">
+        <form action="/submit", method="POST">
+            <label for="Client">Client: </label>
+            <input type="text" id="c-list" name="client" list="client-list"><br>
+            <datalist id="client-list">
+                <option value="Spinneys">
+                <option value="Lulu" >
+                <option value="Nesto" >
+                <option value="Carrefour" >
+                <option value="Ramez" >
+            </datalist>
+            <label for="lpo-date">LPO Date:</label>
+            <input type="text" id="lpo-date" name="lpo_date"><br>
+            <label for="lpo-ref">LPO ref:</label>
+            <input type="text" id="lpo-ref" name="lpo_ref"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="c-div" id="i-div-Delivery">
+        <form action="/add", method="POST">
+            <label>Client: </label>
+            <input list="client-list"><br>
+            <datalist id="client-list">
+                <option value="Spinneys">
+                <option value="Lulu">
+                <option value="Nesto">
+                <option value="Carrefour">
+                <option value="Ramez">
+            </datalist>
+            <label>LPO ref:</label>
+            <input><br>
+            <button>Upload</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+       
+</body>
+</html>
