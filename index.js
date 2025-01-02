@@ -20,7 +20,6 @@ const db = new Pool({
   max: 20,
   idleTimeoutMillis: 300000,
   connectionTimeoutMillis: 200000,
-  ssl: true
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
