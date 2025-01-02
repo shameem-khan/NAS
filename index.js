@@ -12,7 +12,7 @@ const userdata = [];
 const { Pool } = pg
  
 const db = new Pool({
-  host: "dpg-ctpn2j23esus73djc000-a.singapore-postgres.render.com",
+  host: "dpg-ctpn2j23esus73djc000-a",
   user: "sk",
   database: "nas_test",
   password: "ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2",
@@ -49,7 +49,7 @@ app.post("/add", (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on render on port ${port}`);
 });
 
 
