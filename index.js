@@ -27,7 +27,7 @@ const db = new pg.Client({
     database: "nas_test",
     password: "ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2",
     port: 5432,
-    ssl: "true",
+    ssl: true,
     connectionString: "postgresql://sk:ryQZhP2RwMTx4Wk8hvNAPAlSPwzmn0l2@dpg-ctpn2j23esus73djc000-a.singapore-postgres.render.com/nas_test"
 });
 db.connect();
